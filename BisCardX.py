@@ -254,18 +254,3 @@ with tab3:
             cursor.execute(delete_query,values)
             connection.commit()
             st.success('Data deleted Successfully')
-
-    
-
-    
-    
-
-
-
-
-    
-
-
-
-
-
