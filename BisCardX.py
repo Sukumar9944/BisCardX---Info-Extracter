@@ -3,7 +3,6 @@ import streamlit as st
 import time
 import pandas as pd
 from PIL import Image
-import io
 import easyocr
 import numpy as np
 import re
