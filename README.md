@@ -29,9 +29,6 @@ streamlit run app.py
 - Upload extracted data into a MySQL database for storage and retrieval.
 - View, update, and delete details stored in the MySQL database.
 
-## Screenshots
-
-Insert screenshots of the application interface and its different tabs here.
 
 ## Future Enhancements
 
