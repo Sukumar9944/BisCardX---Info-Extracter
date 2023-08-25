@@ -72,8 +72,9 @@ def extract(upload):
 
 tab1,tab2,tab3 = st.tabs(['Upload | Extract','Insert into MySql Database','View | Update | Delete'])
 
-# File Uploading and displaying the uploaded image
+# Upload | Extract
 with tab1:
+    # Uploader
     file_uploader = st.file_uploader('Upload your Image',accept_multiple_files = False)
     
     if file_uploader is not None:
@@ -114,7 +115,8 @@ with tab1:
             st.subheader(f':red[Address] : {address}')
             st.subheader(f':red[Pincode] : {pincode}')
             st.success('Data Extracted Successfully')
-
+            
+# Insert into MySql Database
 with tab2:
     try:
         connection = mysql.connector.connect(
@@ -148,7 +150,7 @@ with tab2:
                 st.warning('User Id already exists')
 
 
-    
+# View | Update | Delete    
 with tab3:
     your_id = st.text_input('Enter your Id')
     your_password = st.text_input('Enter your Password')
